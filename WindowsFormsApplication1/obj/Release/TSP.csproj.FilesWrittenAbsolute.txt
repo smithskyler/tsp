@@ -1,0 +1,8 @@
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/obj/Release/TSP.mainform.resources
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/obj/Release/WindowsFormsApplication1.Properties.Resources.resources
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/bin/Release/WindowsFormsApplication1.exe.config
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/bin/Release/WindowsFormsApplication1.exe.mdb
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/bin/Release/WindowsFormsApplication1.exe
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/obj/Release/WindowsFormsApplication1.exe
+/Users/skyler/Desktop/BYU/Fall 2016/CS 312/TSP/WindowsFormsApplication1/obj/Release/WindowsFormsApplication1.exe.mdb
