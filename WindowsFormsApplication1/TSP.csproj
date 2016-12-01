@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="GreedySolver.cs" />
     <Compile Include="BranchAndBoundSolver.cs" />
+    <Compile Include="KOptLocalSolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
