@@ -411,13 +411,14 @@ namespace TSP
         {
             string[] results = new string[3];
 
-            // TODO: Add your implementation for your advanced solver here.
+			//Find a smart starting bssf
+			GreedySolver greedy = new GreedySolver(Cities, bssf, results);
+			bssf = greedy.Solve();
 
-            results[COST] = "not implemented";    // load results into array here, replacing these dummy values
-            results[TIME] = "-1";
-            results[COUNT] = "-1";
+			KOptLocalSolver kOpt = new KOptLocalSolver(Cities, bssf, results, time_limit);
+			bssf = kOpt.Solve();
 
-            return results;
+			return results;
         }
         #endregion
     }

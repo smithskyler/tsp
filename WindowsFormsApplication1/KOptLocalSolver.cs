@@ -12,9 +12,6 @@ namespace TSP
 		City[] cities;
 		ProblemAndSolver.TSPSolution bssf;
 		string[] results;
-		PriorityQueue queue;
-		int prunedNodes;
-		int nodesCreated;
 		int timeLimit;
 		int numUpdates;
 
@@ -28,8 +25,6 @@ namespace TSP
 
 		public ProblemAndSolver.TSPSolution Solve()
 		{
-			nodesCreated = 0;
-			prunedNodes = 0;
 			numUpdates = 0;
 			var timer = new Stopwatch();
 			timer.Start();
@@ -42,9 +37,6 @@ namespace TSP
 			results[ProblemAndSolver.COST] = costOfBssf().ToString();
 			results[ProblemAndSolver.TIME] = timer.Elapsed.ToString();
 			results[ProblemAndSolver.COUNT] = numUpdates.ToString();
-			Console.WriteLine("Max Stored States: " + queue.LargestSize());
-			Console.WriteLine("States Created: " + nodesCreated);
-			Console.WriteLine("States Pruned: " + prunedNodes);
 			return bssf;
 		}
 
