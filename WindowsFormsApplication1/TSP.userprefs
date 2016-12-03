@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{8AE870FA-ED7A-4D15-8944-F737939E84BA}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="KOptLocalSolver.cs">
     <Files>
-      <File FileName="BranchAndBoundSolver.cs" Line="236" Column="1" />
-      <File FileName="ProblemAndSolver.cs" Line="24" Column="29" />
+      <File FileName="BranchAndBoundSolver.cs" Line="109" Column="9" />
+      <File FileName="ProblemAndSolver.cs" Line="15" Column="22" />
       <File FileName="GreedySolver.cs" Line="26" Column="32" />
       <File FileName="Program.cs" Line="17" Column="1" />
-      <File FileName="KOptLocalSolver.cs" Line="30" Column="18" />
+      <File FileName="KOptLocalSolver.cs" Line="51" Column="8" />
       <File FileName="City.cs" Line="54" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>

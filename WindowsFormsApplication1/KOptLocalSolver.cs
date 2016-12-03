@@ -34,6 +34,7 @@ namespace TSP
 			var changed = true;
 			while (changed)
 			{
+				System.Console.WriteLine("Loop at " + timer.Elapsed.TotalSeconds);
 				changed = false;
 				for (int i = cities.Length - 1; i >= 0; i--)
 				{
@@ -44,20 +45,60 @@ namespace TSP
 						if (swappedSolution.costOfRoute() < bssf.costOfRoute())
 						{
 							bssf = swappedSolution;
-							changed = true;//15438
-							System.Console.WriteLine(i + " " + j);
+							changed = true;
 						}
 					}
 				}
 			}
 
-			//set a 'changed' flag to true
-			//while changed
-			//	for each pair (or 3-set, etc.) of edges
-			//		swap the pair/set
-			//		if the route is valid and its length is better, save it as the new bssf and set changed to true, and break out
-			//Note: This algorithm is short-sighted. It grabs the first route that is better and uses it.
-			//Instead, we could consider getting all of the new routes and setting the best one to the bssf, or keep the top three or four and try them all.
+			//-- faulty variable swap: fastest, but not super good --
+			//var changed = true;
+			//while (changed)
+			//{
+			//	System.Console.WriteLine("Loop at " + timer.Elapsed.TotalSeconds);
+			//	changed = false;
+			//	for (int i = cities.Length - 1; i >= 0; i--)
+			//	{
+			//		for (int j = i - 1; j >= 0; j--)
+			//		{
+			//			ArrayList swapped = Swap(bssf.Route, i, j);
+			//			ProblemAndSolver.TSPSolution swappedSolution = new ProblemAndSolver.TSPSolution(swapped);
+			//			if (swappedSolution.costOfRoute() < bssf.costOfRoute())
+			//			{
+			//				bssf = swappedSolution;
+			//				changed = true;
+			//				break;
+			//			}
+			//		}
+			//		if (changed) break;
+			//	}
+			//}
+
+
+			System.Console.WriteLine("Loop at " + timer.Elapsed.TotalSeconds);
+
+			//Triple swap (slow and thorough)
+			//while (changed)
+			//{
+			//	changed = false;
+			//	for (int i = cities.Length - 1; i >= 0; i--)
+			//	{
+			//		for (int j = changed ? cities.Length - 1 : i - 1; j >= 0; j--)
+			//		{
+			//			for (int k = changed ? cities.Length - 1 : j - 1; k >= 0; k--)
+			//			{
+			//				ArrayList swapped = Swap(bssf.Route, i, j);
+			//				swapped = Swap(swapped, j, k);
+			//				ProblemAndSolver.TSPSolution swappedSolution = new ProblemAndSolver.TSPSolution(swapped);
+			//				if (swappedSolution.costOfRoute() < bssf.costOfRoute())
+			//				{
+			//					bssf = swappedSolution;
+			//					changed = true;
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
 
 			//--- End algorithm ---
 
