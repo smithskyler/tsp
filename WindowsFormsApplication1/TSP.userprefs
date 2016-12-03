@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="KOptLocalSolver.cs">
     <Files>
       <File FileName="BranchAndBoundSolver.cs" Line="109" Column="9" />
-      <File FileName="ProblemAndSolver.cs" Line="15" Column="22" />
+      <File FileName="ProblemAndSolver.cs" Line="429" Column="6" />
       <File FileName="GreedySolver.cs" Line="26" Column="32" />
       <File FileName="Program.cs" Line="17" Column="1" />
-      <File FileName="KOptLocalSolver.cs" Line="51" Column="8" />
+      <File FileName="KOptLocalSolver.cs" Line="56" Column="19" />
       <File FileName="City.cs" Line="54" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -32,7 +32,7 @@ namespace TSP
 			//--- Algorithm here ---
 
 			var changed = true;
-			while (changed)
+			while (changed && timer.ElapsedMilliseconds < timeLimit)
 			{
 				System.Console.WriteLine("Loop at " + timer.Elapsed.TotalSeconds);
 				changed = false;
@@ -46,8 +46,10 @@ namespace TSP
 						{
 							bssf = swappedSolution;
 							changed = true;
+							break;
 						}
 					}
+					if (changed) break;
 				}
 			}
 
@@ -66,11 +68,11 @@ namespace TSP
 			//			if (swappedSolution.costOfRoute() < bssf.costOfRoute())
 			//			{
 			//				bssf = swappedSolution;
-			//				changed = true;
+			//				//changed = true;
 			//				break;
 			//			}
 			//		}
-			//		if (changed) break;
+			//		//if (changed) break;
 			//	}
 			//}
 
